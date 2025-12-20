@@ -42,6 +42,6 @@ The application allows users to log in and interact with the system according to
 - HTML
 - CSS
 - JavaScript
-- SQLite (or your database)
+- SQLite
 
 ---
