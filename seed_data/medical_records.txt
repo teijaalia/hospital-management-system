@@ -1,0 +1,6 @@
+Patient_Email,Doctor_Email,Symptoms,Diagnosis
+patient@hospital.com,dr.smith@hospital.com,Routine check-up,Routine check-up
+michael@hospital.com,dr.smith@hospital.com,Chest discomfort,Cardiac screening
+sara@hospital.com,dr.lee@hospital.com,Coughing and wheezing,Pediatric consultation
+
+

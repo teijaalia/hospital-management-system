@@ -1,0 +1,6 @@
+Email,First_Name,Last_Name,Address,Phone,Condition,Admission_Date,Discharge_Date,Password
+patient@hospital.com,Emily,Stone,123 Health St,0401234567,Healthy,,,patient123
+michael@hospital.com,Michael,Brown,456 Wellness Ave,0407654321,Allergic Rhinitis,,,patient123
+sara@hospital.com,Sara,Connor,789 Care Rd,0405550000,Asthma,,,patient123
+
+

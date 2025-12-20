@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<title>Administrator Profile</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}"> 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: #003366;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #0055cc;
+    }
+
+    button {
+        background-color: #0055cc;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+
+    a {
+        color: #0055cc;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+<app-topbar></app-topbar>  
+<h1>Administrator Profile</h1>
+
+<p><strong>Email:</strong> {{ user.Email }}</p>
+<p><strong>First Name:</strong> {{ admin.First_Name }}</p>
+<p><strong>Last Name:</strong> {{ admin.Last_Name }}</p>
+
+<br>
+<br><br>
+<a href="{{ url_for('home') }}">Back</a> |
+<a href="/logout">Logout</a>
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

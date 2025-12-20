@@ -1,0 +1,155 @@
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: Arial;
+}
+
+.btn:hover {
+  background-color: #1e73b9;
+}
+
+.btn_login {
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #00BCFA;
+    color: White;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: Arial;
+}
+.btn_login:hover {
+    background-color: #00AEEB
+}
+
+.btn_signup {
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #89DEF9;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: Arial;
+}
+.btn_signup:hover {
+    background-color: #5AD1F7;
+}
+
+.topbar2 {
+    width: 98%;
+    height: 60px;
+    background: #0089C5;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.topbar_logo2 {
+    color: white;
+    margin: 0;
+}
+
+.topbar_elements {
+    color: white;
+    margin-left: -10px;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown {
+  float: left;
+  position: relative;
+}
+
+.btn_dropdown {
+    display: inline-block;
+    padding: 16px 16px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: Arial;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 10px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.adminview-panel1 {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.adminview-sidebuttons {
+    display: block;
+    align-items: top;
+}
+
+.search-list {
+  width: 50%;
+  font-family: Arial;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.list-box {
+  border: 1px solid #ccc;
+  height: 150px;          /* Set scroll height */
+  overflow-y: auto;        /* Makes it scrollable */
+  background: #fff;
+}
+
+.item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background: #eee;
+}
+
+
+.records-table {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.records-table .table{
+  width: 98%;
+  table-layout: fixed;
+}

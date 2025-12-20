@@ -1,0 +1,5 @@
+Doctor_Email,Patient_Email,Date,Time,room_type
+dr.smith@hospital.com,patient@hospital.com,2025-01-15,10:00,consultation
+dr.jones@hospital.com,patient@hospital.com,2025-01-15,14:00,examination
+
+

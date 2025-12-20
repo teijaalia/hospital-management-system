@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="topbar_logo">
+	<h1>Title</h1>
+      </div>
+      <div class="topbar_elements">
+	<button class="btn_signup">Sign Up</button>
+	<button class="btn_login">Login</button> 
+      </div>
+    </div>
+    
+    <h1>This is the first page</h1>
+    <p>This is my first webpage.</p>
+
+    <a href="AdminView.html" class="btn">Go to admin view</a>
+  </body>
+</html>

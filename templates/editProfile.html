@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <title>Edit Profile Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #003366;
+            padding: 20px;
+        }
+        h1 {
+            color: #0055cc;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            padding: 5px;
+            width: 300px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            background-color: #0055cc;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        a {
+            color: #0055cc;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit Profile</h1>
+
+    <form action="{{ url_for('edit_profile') }}" method="POST">
+        <label>Email:</label>
+        <input type="email" name="email" value="{{ user.Email }}" required>
+
+        <label>First Name:</label>
+        <input type="text" name="first_name" value="{{ patient.First_Name }}" required>
+
+        <label>Last Name:</label>
+        <input type="text" name="last_name" value="{{ patient.Last_Name }}" required>
+
+        <label>Address:</label>
+        <input type="text" name="address" value="{{ patient.Address }}">
+
+        <label>Phone:</label>
+        <input type="text" name="phone" value="{{ patient.Phone }}">
+
+        <button type="submit">Save Changes</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('profile') }}">Back to Profile</a> |
+    <a href="/logout">Logout</a>
+</body>
+</html>

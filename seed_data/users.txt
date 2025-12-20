@@ -1,0 +1,4 @@
+Email,Password,User_Type
+admin@hospital.com,admin123,admin
+
+

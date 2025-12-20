@@ -1,0 +1,6 @@
+Email,First_Name,Last_Name,Specialization,Password
+dr.smith@hospital.com,John,Smith,Cardiology,doc123
+dr.jones@hospital.com,Alice,Jones,Neurology,doc123
+dr.lee@hospital.com,David,Lee,Pediatrics,doc123
+
+

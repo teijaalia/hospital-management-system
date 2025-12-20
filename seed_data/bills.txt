@@ -1,0 +1,6 @@
+Patient_Email,Date,Cost,Paid
+patient@hospital.com,2025-01-15,120.00,Yes
+michael@hospital.com,2025-01-15,250.00,No
+sara@hospital.com,2025-01-15,80.00,Yes
+
+

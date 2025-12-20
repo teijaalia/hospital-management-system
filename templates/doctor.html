@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <title>Doctor Portal</title>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e9eef4;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            width: 450px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #1d4ed8;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #2563eb;
+            border: none;
+            color: white;
+            font-size: 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        a.logout {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a.logout:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome {{ doctor.First_Name }} {{ doctor.Last_Name }}!</h1>
+    <div class="button-grid">
+      <button onclick="window.location.href='/profile'">Profile</button>
+      <button onclick="window.location.href='{{ url_for('AppointmentView', user_id=doctor.Doctor_ID) }}'">View appointments</button>
+      <button onclick="window.location.href='{{ url_for('MedicalRecords', user_id=doctor.Doctor_ID) }}'">Medical records</button>
+      
+    </div>
+    <a href="/logout" class="logout">Logout</a>
+  </div>
+  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Dept_name,Dept_head,Doctor_Email
+Cardiology,Dr. John Smith,dr.smith@hospital.com
+Neurology,Dr. Alice Jones,dr.jones@hospital.com
+Pediatrics,Dr. David Lee,dr.lee@hospital.com
+
+

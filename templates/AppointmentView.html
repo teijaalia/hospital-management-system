@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+  </head>
+
+  <body>
+    <app-topbar></app-topbar>
+
+    <h1>Appointments</h1>
+
+    {% if appointments and appointments|length > 0 %}
+      <table>
+        <thead>
+          <tr>
+            <th>Appt ID</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Doctor ID</th>
+            <th>Patient ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for a in appointments %}
+          <tr>
+            <td>{{ a.Appt_ID }}</td>
+            <td>{{ a.Date }}</td>
+            <td>{{ a.Time }}</td>
+            <td>{{ a.Doctor_ID }}</td>
+            <td>{{ a.Patient_ID }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No appointments found.</p>
+    {% endif %}
+
+    <br />
+    <a href="{{ url_for('home') }}">Back</a> |
+    <a href="/logout">Logout</a>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+  </body>
+</html>

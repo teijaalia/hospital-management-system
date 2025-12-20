@@ -1,0 +1,4 @@
+Email,First_Name,Last_Name,Dept_name,Password
+admin@hospital.com,Anna,Admin,Cardiology,admin123
+
+

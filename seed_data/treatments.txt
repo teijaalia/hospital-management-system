@@ -1,0 +1,6 @@
+Patient_Email,Doctor_Email,Diagnosis,Medicine,Prescription
+patient@hospital.com,dr.smith@hospital.com,Routine check-up,Vitamin D,Take 1000 IU daily
+michael@hospital.com,dr.smith@hospital.com,Cardiac screening,Aspirin,81 mg daily
+sara@hospital.com,dr.lee@hospital.com,Pediatric consultation,Albuterol,Two puffs as needed
+
+

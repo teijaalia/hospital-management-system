@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin View</title>
+    <!-- If file is static/style.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+
+  <body>
+
+    <app-topbar></app-topbar>
+
+
+    
+    <h1>Admin View</h1>
+    <p>This is where admin view is.</p>
+
+    <div class="adminview-panel1">
+      <div class="search-list">
+	<input type="text" id="searchInput" placeholder="Search..." onkeyup="filterList()">
+
+	<div class="list-box" id="listBox">
+	</div>
+      </div>
+      <div class="adminview-sidebuttons">
+	<a href="AdminView.html" class="btn">View Profile</a>
+	<a href="AdminView.html" class="btn">View Appointments</a>
+	<a href="AdminView.html" class="btn">View Treatments</a>
+	<a href="AdminView.html" class="btn">View Records</a>
+      </div>
+    </div>
+
+    
+    <a href="index.html" class="btn">This is a button</a>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>  
+  </body>
+</html>

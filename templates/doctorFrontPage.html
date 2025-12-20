@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<title>Doctor Profile</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: #003366;
+        padding: 20px;
+    }
+
+    title {
+        color: #0055cc;
+    }
+
+    button {
+        background-color: #0055cc;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+
+    a {
+        color: #0055cc;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+    <app-topbar></app-topbar> 
+
+<h1 class="title">Doctor Profile</h1>
+
+<p><strong>Email:</strong> {{ user.Email }}</p>
+<p><strong>First Name:</strong> {{ doctor.First_Name }}</p>
+<p><strong>Last Name:</strong> {{ doctor.Last_Name }}</p>
+<p><strong>Specialization:</strong> {{ doctor.Specialization }}</p>
+
+<br>
+
+<br><br>
+{% set did = (doctor.Doctor_ID if doctor is defined else (doctor_id if doctor_id is defined else session.get('doctor_id'))) %}
+<a href="{{ url_for('doctor_page', doctor_id=did) }}">Back</a> |
+<a href="/logout">Logout</a>
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin View</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="topbar_logo">
+	<h1>Title</h1>
+      </div>
+      <div class="topbar_elements">
+	
+	<div class="dropdown">
+	  <button class="btn_dropdown"></button>
+	  <div class="dropdown-content">
+	    <a href="index.html">Home Page</a>
+	    <a href="AnotherPage.html">Another Page</a>
+	    <button class="btn_login">Log Out</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+
+    
+    <h1>Admin View</h1>
+    <p>This is where admin view is.</p>
+
+    <div class="adminview-panel1">
+      <div class="search-list">
+	<input type="text" id="searchInput" placeholder="Search..." onkeyup="filterList()">
+
+	<div class="list-box" id="listBox">
+	</div>
+      </div>
+      <div class="adminview-sidebuttons">
+	<a href="AdminView.html" class="btn">View Profile</a>
+	<a href="AdminView.html" class="btn">View Appointments</a>
+	<a href="AdminView.html" class="btn">View Treatments</a>
+	<a href="AdminView.html" class="btn">View Records</a>
+      </div>
+    </div>
+
+    
+    <a href="index.html" class="btn">This is a button</a>
+
+    <script src="js/scripts.js"></script>    
+  </body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+  </head>
+
+  <body>
+    <app-topbar></app-topbar>
+
+    <h1>Medical Records</h1>
+
+    {% if records_list and records_list|length > 0 %}
+      <table>
+        <thead>
+          <tr>
+            <th>Record ID</th>
+            <th>Doctor</th>
+            <th>Diagnosis</th>
+            <th>Symptoms</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in records_list %}
+          <tr>
+            <td>{{ r.Record_ID }}</td>
+            <td>{{ r.Doctor_ID }}</td>
+            <td>{{ r.Diagnosis }}</td>
+            <td>{{ r.Symptoms }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No records found.</p>
+    {% endif %}
+
+    <br />
+    <a href="{{ url_for('home') }}">Back</a> |
+    <a href="/logout">Logout</a>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+  </body>
+</html>

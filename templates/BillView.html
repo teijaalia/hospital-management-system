@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+  </head>
+
+  <body>
+    <app-topbar></app-topbar>
+
+    <h1>Bills</h1>
+
+    {% if bill_list and bill_list|length > 0 %}
+      <table>
+        <thead>
+          <tr>
+            <th>Payment ID</th>
+            <th>Date</th>
+            <th>Cost</th>
+            <th>Paid</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for b in bill_list %}
+          <tr>
+            <td>{{ b.Payment_ID }}</td>
+            <td>{{ b.Date }}</td>
+            <td>{{ b.Cost }}</td>
+            <td>{{ b.Paid }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No bills found.</p>
+    {% endif %}
+
+    <br />
+    <a href="{{ url_for('home') }}">Back</a> |
+    <a href="/logout">Logout</a>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+  </body>
+</html>
