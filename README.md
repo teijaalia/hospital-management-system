@@ -45,13 +45,3 @@ The application allows users to log in and interact with the system according to
 - SQLite (or your database)
 
 ---
-
-## Project Structure
-Hospital-Management-System/
-│
-├── app.py
-├── models.py
-├── templates/
-├── static/
-├── seed_data/
-└── README.md
