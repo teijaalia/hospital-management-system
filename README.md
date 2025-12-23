@@ -45,3 +45,11 @@ The application allows users to log in and interact with the system according to
 - SQLite
 
 ---
+
+## Security notes
+
+This project is a learning/demo application.
+
+Password hashing was intentionally omitted to keep the focus on
+application structure and role-based access control.
+In a real-world deployment, passwords should be securely hashed
