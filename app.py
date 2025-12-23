@@ -2,10 +2,11 @@ from flask import Flask, render_template, request, redirect, url_for, session, j
 from models import User, Patient, Doctor, Administrator, Appointment, Room, Treatment, Bill, MedicalRecord, Department, session as db_session
 from datetime import datetime, timedelta, time
 from sqlalchemy import func
+import os
 
 
 app = Flask(__name__)
-app.secret_key = "muuta_tähän_turvallinen_salaisuus"
+app.secret_key = os.environ.get("FLASK_SECRET_KEY", "dev-secret-key")
 
 # --- LOGIN API (POST) ---
 @app.route("/login", methods=["POST"])
